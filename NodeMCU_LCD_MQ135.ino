@@ -58,6 +58,7 @@ void loop() {
   Wire.begin(2, 0);
   lcd.begin();
   lcd.backlight();
+  Serial.println(sensorValue);
 
   if (sensorValue < 100) {
     lcd.print("Nema dima");
